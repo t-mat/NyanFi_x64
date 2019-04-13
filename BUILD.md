@@ -10,12 +10,12 @@
 
 ### Building
 
-コマンドプロンプトを開き、下記のコマンドを入力することで、 NyanFi_x64 リポジトリの clone とビルドができます
+コマンドプロンプト内で下記のコマンドを入力すると、 NyanFi_x64 リポジトリの clone とビルドができます
 
 ```bat
 cmd.exe
-cd "%USERPROFILE%\Documents"
-rd /s /q NyanFi_x64
+cd /d "%USERPROFILE%\Documents"
+if exist NyanFi_x64 ( rd /s /q NyanFi_x64 )
 git clone https://github.com/Nekomimi1958/NyanFi_x64.git
 cd NyanFi_x64
 .\build.cmd
