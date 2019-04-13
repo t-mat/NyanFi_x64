@@ -4,3 +4,5 @@ help/* linguist-documentation
 
 *.cpp diff=cp932
 *.h diff=cp932
+
+*.cmd text encoding=cp932 eol=crlf
